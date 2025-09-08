@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Intelligent Background Removal - One-Click Image Background Removal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-magic"></i> AI Intelligent Background Removal Tool</h1>
+            <p class="subtitle">Precise background removal, complete subject preservation - Designed for product images and portraits</p>
+        </header>
+
+        <div class="main-content">
+            <div class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                        <h3>Drag and drop images here or click to upload</h3>
+                        <p>Smart background removal, complete subject detail preservation - Supports JPG, PNG, JPEG formats, max 16MB</p>
+                        <input type="file" id="fileInput" accept="image/*" hidden>
+                        <button class="upload-btn" id="uploadBtn">Select Image</button>
+                    </div>
+                </div>
+
+                <div class="preview-section" id="previewSection" style="display: none;">
+                    <div class="image-comparison">
+                        <div class="image-container">
+                        <h4>Original Image</h4>
+                        <img id="originalImage" src="" alt="Original Image">
+                    </div>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="image-container">
+                        <h4>Background Removed</h4>
+                        <img id="processedImage" src="" alt="Background Removed">
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="download-btn" id="downloadBtn">
+                            <i class="fas fa-download"></i> Download Transparent Background Image
+                        </button>
+                        <button class="new-upload-btn" id="newUploadBtn">
+                            <i class="fas fa-plus"></i> Upload New Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h3>Why Choose Our Background Removal Tool?</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Protect Subject Integrity</h4>
+                        <p>Only remove background, completely preserve all details like hair and body</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-crosshairs"></i>
+                        <h4>Precise Background Recognition</h4>
+                        <p>Smart distinction between subject and background, avoid accidentally deleting important parts</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-user-check"></i>
+                        <h4>Portrait Processing Expert</h4>
+                        <p>Specially optimized for portraits, preserve fine details like hair strands</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-magic"></i>
+                        <h4>One-Click Transparent Background</h4>
+                        <p>Quickly generate transparent backgrounds, ready for design and e-commerce</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <p id="loadingText">Smartly selecting best model...</p>
+                <div class="progress-steps">
+                    <div class="step active" id="step1">Model Selection</div>
+                    <div class="step" id="step2">AI Background Removal</div>
+                    <div class="step" id="step3">Edge Optimization</div>
+                    <div class="step" id="step4">Complete</div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 AI Background Removal Tool - Powered by rembg technology</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
