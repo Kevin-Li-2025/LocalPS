@@ -1,41 +1,41 @@
-🎉 AI智能抠图网站创建完成！
+🎉 AI Intelligent Background Removal Website Creation Complete!
 
-📋 快速启动指南：
+📋 Quick Startup Guide:
 
-1️⃣ 启动网站：
+1️⃣ Start Website:
    python run.py
 
-2️⃣ 访问网站：
+2️⃣ Access Website:
    http://localhost:8000
 
-3️⃣ 使用说明：
-   - 拖拽图片到上传区域，或点击选择图片
-   - 系统自动识别并去除背景
-   - 下载透明背景的PNG图片
+3️⃣ Usage Instructions:
+   - Drag and drop images to upload area, or click to select images
+   - System automatically recognizes and removes backgrounds
+   - Download transparent background PNG images
 
-✨ 网站特性：
-- 🎨 现代化UI设计
-- 📱 响应式布局，支持手机端
-- ⚡ 基于AI的智能抠图
-- 🚀 快速处理，几秒钟完成
-- 💾 支持16MB大文件
+✨ Website Features:
+- 🎨 Modern UI Design
+- 📱 Responsive layout, supports mobile devices
+- ⚡ AI-based intelligent background removal
+- 🚀 Fast processing, completed in seconds
+- 💾 Supports 16MB large files
 
-🛠️ 项目文件：
-- app.py: Flask后端应用
-- run.py: 启动脚本
-- templates/index.html: 前端页面
-- static/css/style.css: 样式文件
-- static/js/main.js: 前端逻辑
-- requirements.txt: Python依赖
+🛠️ Project Files:
+- app.py: Flask backend application
+- run.py: Startup script
+- templates/index.html: Frontend page
+- static/css/style.css: Style file
+- static/js/main.js: Frontend logic
+- requirements.txt: Python dependencies
 
-🎯 适用场景：
-- 电商产品抠图
-- 头像背景处理
-- 设计素材制作
-- 海报元素提取
+🎯 Applicable Scenarios:
+- E-commerce product background removal
+- Avatar background processing
+- Design material creation
+- Poster element extraction
 
-🔧 技术栈：
+🔧 Technology Stack:
 - Python Flask
-- rembg AI库
+- rembg AI library
 - HTML5/CSS3/JS
-- u2net深度学习模型
+- u2net deep learning model
