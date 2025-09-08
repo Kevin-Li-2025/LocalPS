@@ -1,0 +1,41 @@
+🎉 AI智能抠图网站创建完成！
+
+📋 快速启动指南：
+
+1️⃣ 启动网站：
+   python run.py
+
+2️⃣ 访问网站：
+   http://localhost:8000
+
+3️⃣ 使用说明：
+   - 拖拽图片到上传区域，或点击选择图片
+   - 系统自动识别并去除背景
+   - 下载透明背景的PNG图片
+
+✨ 网站特性：
+- 🎨 现代化UI设计
+- 📱 响应式布局，支持手机端
+- ⚡ 基于AI的智能抠图
+- 🚀 快速处理，几秒钟完成
+- 💾 支持16MB大文件
+
+🛠️ 项目文件：
+- app.py: Flask后端应用
+- run.py: 启动脚本
+- templates/index.html: 前端页面
+- static/css/style.css: 样式文件
+- static/js/main.js: 前端逻辑
+- requirements.txt: Python依赖
+
+🎯 适用场景：
+- 电商产品抠图
+- 头像背景处理
+- 设计素材制作
+- 海报元素提取
+
+🔧 技术栈：
+- Python Flask
+- rembg AI库
+- HTML5/CSS3/JS
+- u2net深度学习模型

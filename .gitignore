@@ -1,0 +1,36 @@
+# Ignore website code files
+app.py
+run.py
+templates/
+static/
+uploads/
+processed/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore test files
+test_image.jpg
+test_result.png
+test.html
+
+# Ignore Python virtual environment
+venv/
+env/
+.env
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Keep documentation and configuration files only
